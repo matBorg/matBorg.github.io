@@ -6,6 +6,6 @@ function hi() {
     var name = document.getElementById("name").value
     var age = document.getElementById("age").value
     var city = document.getElementById("city").value
-    document.write("Ciao "+ name + ", hai " + age + " anni e sei nato a " + city)
+    document.getElementById("Saluto").innerHTML = "Ciao "+ name + ", hai " + age + " anni e sei nato a " + city
     
 }

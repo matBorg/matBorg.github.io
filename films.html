@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+  <link href="miostile.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://kit.fontawesome.com/622295a471.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">matBorg's site</a>
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Programmazione
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./pi5.html">P5</a>
+              <a class="dropdown-item" href="./rubrica.html">Rubrica</a>
+              <a class="dropdown-item" href="./films.html">Recensioni films</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="container" class="spaziatore">
+        <br>
+        <h6 id="Titolo">In questa pagina web troverete i film che, secondo me, vanno visti almeno una volta nella vita</h6>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="media">
+          <img src="PulpFiction.jpg" class="align-self-start mr-3" style="width:150px">
+          <div class="media-body">
+            <a href="#" class="badge badge-primary">Azione</a>
+            <a href="#" class="badge badge-secondary">Thriller</a>
+            <a href="#" class="badge badge-success">Mafia</a>
+            <h4>Pulp Fiction</h4>
+            <p>La storia di Pulp Fiction si snoda in 3 rami e narra la criminalità a 360 gradi: dai gangster ai pugili corrotti. Considerando gli attori, la trama e la narrazione degli eventi; Pulp Fiction diventa un film assolutamente da vedere.</p>
+          </div>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="media">
+          <img src="Blade Runner.jpg" class="align-self-start mr-3" style="width:150px">
+          <div class="media-body">
+            <a href="#" class="badge badge-primary">Azione</a>
+            <span class="badge badge-info">Fantascienza</span>
+            <h4>Blade Runner</h4>
+            <p>In una Los Angeles piovosa e sovrappopolata, il poliziotto Deckard (Harrison Ford), dell'unità Blade Runner, viene richiamato in servizio. Il film ha ottenuto 2 candidature a Premi Oscar ed 1 a Golden Globes.</p>
+          </div>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="text-center">
+           <button type="button" class="btn btn-danger" onclick="alert('COMPLIMENTI SEI DIVENTATO MILIONARIO HAHAHAHA')">Danger</button>
+          </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <div class="text-center">
+          <button type="button" onclick="changeTitle()">Non sei d'accordo?</button>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+        </div>
+        <div>
+            <h6 id="Saluto"></h6>
+            <div class="form-group">
+              <label for="name">Nome:</label>
+              <input type="name" id="name" class="form-control" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="form-group">
+              <label for="age">Età:</label>
+              <input type="age" id="age" class="form-control" placeholder="Inserisci la tua età">
+            </div>
+            <div class="form-group">
+              <label for="city">Città:</label>
+              <input type="city" id="city" class="form-control" placeholder="Inserisci la città dove sei nato" >
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="hi()">Fine</button>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        </div>
+        <ul class="pagination">
+          <li class="page-item disabled"><a class="page-link" href="#">Precedente</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Prossimo</a></li>
+        </ul>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <script src="myScript.js"></script>
+        
+      </body>
+
+          
+</html>

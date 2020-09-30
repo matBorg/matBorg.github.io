@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/622295a471.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  
 
     </head>
     <body>
@@ -34,10 +34,33 @@
           </li>
         </ul>
       </nav>
-      <div class="container" class="pi5">
-        <br>
-        <h1 id ="scritta">Ciao</h1>
-        <h6 id="scritta">mi chiamo Matteo Borgesano ed in queso sito potrai trovare degli esercizi che ho svolto per imparare ad usare il modulo P5, l'HTML ed il JS. Per vedere di cosa parlo usa la barra di navigazione qui in alto e scopri che cosa ho fatto!</h6>
+      <div class="container" class="spaziatore">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Clicca sul link per vedere il programma</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://editor.p5js.org/matBorg/full/VeBuMxNvh">Script numero 1</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://editor.p5js.org/matBorg/full/a7JXNCnA2">Script numero 2</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://editor.p5js.org/matBorg/full/DyH9uGhFn">Script numero 3</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://editor.p5js.org/matBorg/full/YzxwdHP5H">Script numero 4</a></td>
+            </tr>
+            
+          </tbody>
+        </table>
       </div>
       <footer>
         <br>
@@ -46,55 +69,9 @@
           <a style = "margin-right: 30px" href = "https://www.instagram.com/matt_borge/" class = "fab fa-instagram fa-2x"></a>
           <a style = "margin-right: 30px" href= "https://github.com/matBorg" class = "fab fa-github fa-2x"></a>
           <a style = "margin-block-end: 30px" href= "https://twitter.com/BorgesanoMatteo" class = "fab fa-twitter fa-2x"></a>
+          
         </div>
         
       </footer>
     </body>
-    <script>
-      var W = 400
-      var H = 350
-      var g = 9
-      function setup() {
-        createCanvas(W, H)
-        frameRate(120)
-        cerchi = returnList(180)
-      }
-
-      function draw() {
-        background(255, 255, 255)
-        for (var i = 0; i<cerchi.length; i++){
-          fill(cerchi[i].colore)
-          circle(cerchi[i].x, cerchi[i].y, cerchi[i].r) 
-        }
-        move(cerchi)
-      }
-
-      function move(array){
-        for (let i = 0; i<array.length; i++){
-            array[i].y += array[i].v
-        if (array[i].y > H+array[i].r){
-          array[i].y = getRndInteger(-2*H, -array[i].r)
-          array[i].x = getRndInteger(0, W)
-        }
-        }
-        }
-
-      function returnList(N){
-      var cerchi = []
-      noStroke()
-      for (var i = 0; i < N; i++){
-        var cerchio = new Object();
-        cerchio.r = getRndInteger(20, 70)
-        cerchio.x = getRndInteger(0, W)
-        cerchio.y = getRndInteger(0, H)
-        cerchio.colore = [getRndInteger(0, 255), getRndInteger(0, 255), getRndInteger(0, 255)]
-        cerchio.v = getRndInteger(2, 5)
-        cerchi.push(cerchio) 
-        }
-        return cerchi
-      }
-      function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min) ) + min;
-      }
-    </script>
 </html>
